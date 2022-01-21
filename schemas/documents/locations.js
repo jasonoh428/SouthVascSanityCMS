@@ -10,33 +10,26 @@ export default {
     },
 
     {
-        name:'address',
-        title:'Address',
-        type:'string'
+      name: "address",
+      title: "Address",
+      type: "string",
     },
 
     {
-        name:'phoneGeneral',
-        type:'string',
-        title:'Phone General'
+      name: "phoneGeneral",
+      type: "string",
+      title: "Phone General",
     },
 
     {
-        name:'phoneAppt',
-        type:'string',
-        title:'Phone Appointments'
+      name: "phoneAppt",
+      type: "string",
+      title: "Phone Appointments",
     },
 
     {
-      name:'mapEmbed',
-      type:'text',
-      title:'Map Embed',
+      name: "locationImage",
+      type: "image",
     },
-
-    {
-        name:'map',
-        title:'Map',
-        type:'geopoint'
-    }
   ],
 };
