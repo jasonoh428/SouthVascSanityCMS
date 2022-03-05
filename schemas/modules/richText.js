@@ -4,27 +4,30 @@ export default {
   of: [
     { type: "block" },
 
-
     {
-      name:'titleBar',
-      type:'object',
-      title:'Title Bar',
-      fields:[{
-        name:'title',
-        type:'string',
-        title:'Text'
-      }]
+      name: "titleBar",
+      type: "object",
+      title: "Title Bar",
+      fields: [
+        {
+          name: "title",
+          type: "string",
+          title: "Text",
+        },
+      ],
     },
 
     {
-      name:'overlayButton',
-      type:'object',
-      title:'Overlay Button',
-      fields:[{
-        name:'title',
-        type:'string',
-        title:'Text'
-      }]
+      name: "overlayButton",
+      type: "object",
+      title: "Overlay Button",
+      fields: [
+        {
+          name: "title",
+          type: "string",
+          title: "Text",
+        },
+      ],
     },
 
     {
@@ -46,7 +49,11 @@ export default {
         { name: "width", type: "number", title: "Width" },
       ],
     },
-
-    
+    {
+      name: "groupImage",
+      title: "Group Image",
+      type: "object",
+      fields: [{ type: "array", name: "images", of: [{ type: "image" }] }],
+    },
   ],
 };
