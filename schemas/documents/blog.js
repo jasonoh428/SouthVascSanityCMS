@@ -16,33 +16,48 @@ export default {
         source: "title",
       },
     },
+    {
+      name: "meta",
+      type: "array",
+      of: [
+        {
+          type: "object",
+          fields: [
+            {
+              name: "name",
+              type: "string",
+            },
+            {
+              name: "content",
+              type: "text",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "breadcrumbs",
+      title: "BreadCrumnb Structure",
+      type: "reference",
+      to: [{ type: "breadcrumbs" }],
+    },
 
     {
-      name:'breadcrumbs',
-      title:'BreadCrumnb Structure',
-      type:'reference',
-      to:[{type:'breadcrumbs'}]
-  },
+      name: "date",
+      title: "Date",
+      type: "date",
+    },
 
     {
-        name: "date",
-        title: "Date",
-        type: "date",
-       
-      },
+      name: "excerpt",
+      title: "Excerpt",
+      type: "text",
+    },
 
     {
-        name: "excerpt",
-        title: "Excerpt",
-        type: "text",
-       
-      },
-
-    {
-        name: "text",
-        title: "Text",
-        type: "blocks",
-       
-      },
+      name: "text",
+      title: "Text",
+      type: "blocks",
+    },
   ],
 };
