@@ -40,6 +40,7 @@ import locations from '../schemas/content/locations'
 import topLink from "../schemas/objects/topLink";
 import subLink from "../schemas/objects/subLink";
 import youtube from "../schemas/modules/youtube";
+import seo from "./documents/seo";
 
 import breadcrumb from '../schemas/documents/breadcrumbs'
 
@@ -85,6 +86,7 @@ export default createSchema({
     form,
     locations,
     collections,
-    breadcrumb
+    breadcrumb,
+    seo
   ]),
 });
